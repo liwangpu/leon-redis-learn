@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  redis-server:
+    container_name: redis-server-c
+    image: redis:5.0.5
+    restart: always
+    ports:
+      - "6379:6379"
